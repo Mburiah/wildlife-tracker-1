@@ -5,11 +5,13 @@
         <div class="col">
             <h1 class="display-4">Animals</h1>
             {{#if animals}}
-            <ol>
                 {{#each animals}}
-                <li>{{animal_name}}</li>
+                <div class="alert alert-info">
+                    <p><strong>Name:</strong> {{animal_name}}</p>
+                    <p><strong>Age:</strong> {{animal_age}}</p>
+                    <p><strong>ID:</strong> {{animal_id}}</p>
+                </div>
                 {{/each}}
-            </ol>
             {{else}}
                 <div class="alert alert-danger">
                     No Animals Added
